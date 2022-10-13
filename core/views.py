@@ -4,10 +4,10 @@ from django.shortcuts import render
 from .forms import ClienteForm, FuncionarioForm
 
 def index(request):
-    return render(request, 'index.html')
+    return render(request, 'index/index.html')
 
 def login(request):
-    return render(request, 'login.html')    
+    return render(request, 'login/login.html')    
 
 def agenda(request):
     return render(request, 'agenda.html')    
