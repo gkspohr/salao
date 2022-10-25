@@ -22,3 +22,6 @@ def funcionario(request):
 
 def listaprecos(request):
     return render(request, 'listaprecos.html')
+
+def register(request):
+    return render(request, 'login/register.html')    

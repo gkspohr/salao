@@ -13,15 +13,27 @@
   <link rel="stylesheet" href="../static/css/icheck-bootstrap.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../static/css/adminlte.min.css">
+  
+  <!--<style>
+    .container{
+      width: 100vw;
+      height: 100vh;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  </style> -->
 </head>
-<div class="login-box">
-  <div class="login-logo">
-    <a href="../templates/index.html"><b>Admin</b>LTE</a>
+
+<div class="login-box" style="align-content:center">
+  <div class="login-logo" style="text-align:center">
+    <a href="../templates/index.html" style="text-align:center"><b>Área Administrativa</b></a> 
+          
   </div>
   <!-- /.login-logo -->
   <div class="card" style="margin-right: -140%; margin-left: 115%;">
     <div class="card-body login-card-body">
-      <p class="login-box-msg">Sign in to start your session</p>
+      <p class="login-box-msg">Login de acesso</p>
 
       <form action="../../index3.html" method="post">
         <div class="input-group mb-3">
@@ -33,7 +45,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password">
+          <input type="password" class="form-control" placeholder="Senha">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -45,18 +57,19 @@
             <div class="icheck-primary">
               <input type="checkbox" id="remember">
               <label for="remember">
-                Remember Me
+                Manter logado
               </label>
             </div>
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            <button type="submit" class="btn btn-primary btn-block">Entre</button>
           </div>
           <!-- /.col -->
         </div>
       </form>
 
+      <!--
       <div class="social-auth-links text-center mb-3">
         <p>- OR -</p>
         <a href="#" class="btn btn-block btn-primary">
@@ -66,17 +79,19 @@
           <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
         </a>
       </div>
+      -->
       <!-- /.social-auth-links -->
 
       <p class="mb-1">
-        <a href="forgot-password.html">I forgot my password</a>
+        <a href="../login/forgot-password.html">Esqueci minha senha</a>
       </p>
       <p class="mb-0">
-        <a href="register.html" class="text-center">Register a new membership</a>
+        <a href="../login/register.html" class="text-center">Novo usuário</a>
       </p>
     </div>
     <!-- /.login-card-body -->
   </div>
+  
 </div>
 <!-- /.login-box -->
 
@@ -86,5 +101,6 @@
 <script src="../static/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../static/js/adminlte.min.js"></script>
+
 </body>
 </html>

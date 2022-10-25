@@ -8,7 +8,7 @@ urlpaterns = [
     path('', include('core.urls')),
 ]
 
-from .views import funcionario, index, agenda, cliente, login, listaprecos
+from .views import funcionario, index, agenda, cliente, login, listaprecos, register
 
 urlpatterns = [
     path('', index),
@@ -17,4 +17,5 @@ urlpatterns = [
     path('funcionario', funcionario),
     path('login', login),
     path('listaprecos', listaprecos),
+    path('register', register),
 ]
